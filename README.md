@@ -4,22 +4,27 @@ API para encurtar URL
 
 ## Requeriments
 
-* [Node.js](https://nodejs.org)
-* [MongoDB](https://cloud.mongodb.com)
+* [cloud.mongodb](https://cloud.mongodb.com)
+* [nodejs](https://nodejs.org)
+* [expressjs](https://expressjs.com)
+* [typescript](https://www.typescriptlang.org)
+* [cors](https://www.npmjs.com/package/cors)
+* [cors github](github.com/expressjs/cors)
 
+# Configuring the package.json
+
+- `"build:watch": "tsc -w"`
+
+Script para que o tsc (Compilador do TypeScript) gere .js (build) sempre que .ts for modificado.
+
+- `"dev": "nodemon ./dist/index.js"`
+
+Script para que o nodemon reinicialize a execução do servidor sempre que .js for modificada.
 
 # Available Scripts
-In the project directory, you can run:
 
-### `npm init`
-Launch an app in Node.js
+## In the project directory, you can run:
 
-
-`
-var MongoClient = require('mongodb').MongoClient;
-var uri = "mongodb://heviane:<password>@datalake0-4ptmr.a.query.mongodb.net/myFirstDatabase?ssl=true&authSource=admin";
-MongoClient.connect(uri, function(err, client) {
-const collection = client.db("test").collection("devices");
-client.close();
-});
-`
+- `npm install`
+- `npm run build`
+- `npm run dev`
