@@ -1,15 +1,19 @@
 # API URL Shortener
 
 API para encurtar URL
-
 ## Requeriments
 
-* [cloud.mongodb](https://cloud.mongodb.com)
 * [nodejs](https://nodejs.org)
 * [expressjs](https://expressjs.com)
 * [typescript](https://www.typescriptlang.org)
-* [cors](https://www.npmjs.com/package/cors)
-* [cors github](github.com/expressjs/cors)
+
+* [cloud.mongodb](https://cloud.mongodb.com)
+NoSQL database in the cloud
+* [mongoosejs.com](https://mongoosejs.com)
+Object modeling for node.js
+* [typegoose](https://typegoose.github.io/typegoose)
+* [typegoose github](https://github.com/typegoose/typegoose)
+Typegoose is a "wrapper" to easily write Mongoose models with TypeScript
 
 # Configuring the package.json
 
@@ -28,3 +32,7 @@ Script para que o nodemon reinicialize a execução do servidor sempre que .js f
 - `npm install`
 - `npm run build`
 - `npm run dev`
+
+# References to articles
+
+* [Typegoose - Defina modelos Mongoose usando classes TypeScript](https://morioh.com/p/9424a22182a9)

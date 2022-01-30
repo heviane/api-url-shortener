@@ -1,6 +1,10 @@
-import { prop, Typegoose } from '@typegoose/typegoose';  // '@hasezoey/typegoose'
+// import { prop, Typegoose } from '@typegoose/typegoose'; // '@hasezoey/typegoose';
 
-export class URL extends Typegoose {
+const prop      = require('@typegoose/typegoose').prop;
+const Typegoose = require('@typegoose/typegoose').Typegoose;
+
+export class URL extends Typegoose { //...ERRO AQUI...TypeError: Class extends value undefined is not a constructor or null
+
 	@prop({ required: true })
 	hash: string
 
@@ -11,4 +15,4 @@ export class URL extends Typegoose {
 	shortURL: string
 }
 
-export const URLModel = new URL().getModelForClass(URL)
+export const URLModel = new URL().getModelForClass(URL);

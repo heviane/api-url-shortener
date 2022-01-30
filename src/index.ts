@@ -1,6 +1,6 @@
 import express from 'express'
-import { URLController } from './controller/URLController'
 import { MongoConnection } from './database/MongoConnection'
+import { URLController } from './controller/URLController'
 
 const api = express()
 api.use(express.json())
@@ -12,4 +12,4 @@ const urlController = new URLController()
 api.post('/shorten', urlController.shorten)
 api.get('/:hash', urlController.redirect)
 
-api.listen(3000, () => console.log('Express listening'))
+api.listen(3000, () => console.log('Express listening at the door 3000...'))

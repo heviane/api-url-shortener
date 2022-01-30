@@ -1,5 +1,7 @@
-import mongoose from 'mongoose'
-import { config } from '../config/Constants'
+import { config } from '../config/Constants';
+// import mongoose from 'mongoose';   // AQUI estava dando erro...
+const { mongoose } = require('mongoose');
+
 export class MongoConnection {
 	public async connect(): Promise<void> {
 		try {

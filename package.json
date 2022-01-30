@@ -26,9 +26,12 @@
   },
   "dependencies": {
     "@typegoose/typegoose": "^9.5.0",
-    "cors": "^2.8.5",
+    "@types/mongoose": "^5.11.97",
+    "@types/node": "^17.0.13",
     "express": "^4.17.1",
+    "mongodb": "^4.3.1",
     "mongoose": "^6.1.8",
+    "node": "^17.4.0",
     "shortid": "^2.2.16"
   }
 }
