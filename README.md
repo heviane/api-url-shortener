@@ -2,6 +2,8 @@
 
 API em node para encurtar URLs.
 
+- LEMBRETE: Criar um frontend para esta API.
+
 ## Requisitos
 
 - [Node](https://nodejs.org/en)
